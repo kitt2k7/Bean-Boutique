@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+
+    <title>Bean Boutique | Coffee House</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+  </head>
+
+  <body>
+    <!-- First-visit newsletter offer -->
+    <div class="modal" id="discountModal" aria-hidden="true">
+      <div
+        class="modal-content"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="offer-title"
+      >
+        <button
+          class="close-btn"
+          id="closeModal"
+          type="button"
+          aria-label="Close discount window"
+        >
+          <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+        </button>
+
+        <div class="modal-visual" aria-hidden="true">
+          <div class="modal-brand">
+            <i class="fa-solid fa-mug-hot"></i>
+            <span>Bean Boutique</span>
+          </div>
+
+          <div class="modal-offer">
+            <small>Welcome gift</small>
+            <strong>10%</strong>
+            <span>off your first coffee order</span>
+          </div>
+        </div>
+
+        <div class="modal-form-panel">
+          <p class="modal-kicker">A little welcome gift</p>
+
+          <h2 id="offer-title">Your first cup just got better.</h2>
+
+          <p class="modal-text">
+            Join our coffee list for new roast announcements, workshop news and
+            your 10% first-order discount code.
+          </p>
+
+          <div class="modal-benefits" aria-hidden="true">
+            <span>
+              <i class="fa-solid fa-tag"></i>
+              First order
+            </span>
+
+            <span>
+              <i class="fa-solid fa-envelope"></i>
+              Coffee updates
+            </span>
+          </div>
+
+          <form id="discount-form" novalidate>
+            <label for="discount-email"> Email address </label>
+
+            <input
+              type="email"
+              id="discount-email"
+              name="email"
+              placeholder="you@example.com"
+              autocomplete="email"
+              required
+            >
+
+            <button class="signup-btn" type="submit">Get My 10% Code</button>
+
+            <p class="form-message" id="form-message" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header">
+      <nav class="nav-bar section-content" aria-label="Primary navigation">
+        <a class="brand" href="./index.html" aria-label="Bean Boutique home">
+          <span class="brand-mark" aria-hidden="true">
+            <i class="fa-solid fa-seedling"></i>
+          </span>
+
+          <span>
+            <strong>Bean Boutique</strong>
+            <small>COFFEE HOUSE</small>
+          </span>
+        </a>
+
+        <button
+          class="menu-button"
+          id="menu-open-button"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="primary-menu"
+        >
+          <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
+
+        <div class="nav-menu" id="primary-menu">
+          <button
+            class="menu-button menu-close"
+            id="menu-close-button"
+            type="button"
+            aria-label="Close navigation menu"
+          >
+            <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+          </button>
+
+          <a class="nav-link" href="./index.html">Home</a>
+          <a class="nav-link" href="./coffee.html">Coffee</a>
+          <a class="nav-link" href="./equipment.html">Equipment</a>
+          <a class="nav-link" href="./events.html">Events</a>
+          <a class="nav-link" href="./offers.html">Offers</a>
+
+          <a class="nav-link cart-link" href="./cart.html">
+            Cart
+
+            <span
+              class="cart-count"
+              id="cart-count"
+              role="status"
+              aria-live="polite"
+              >0</span
+            >
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero-section" aria-labelledby="hero-title">
+        <div class="hero-background" aria-hidden="true">
+          <div class="hero-slide slide-one active"></div>
+          <div class="hero-slide slide-two"></div>
+          <div class="hero-slide slide-three"></div>
+        </div>
+
+        <div class="hero-overlay" aria-hidden="true"></div>
+
+        <div class="hero-content section-content">
+          <div class="hero-copy">
+            <p class="eyebrow">ROASTED WITH INTENTION</p>
+
+            <h1 id="hero-title">Good coffee, <em>slowly enjoyed.</em></h1>
+
+            <p class="hero-description">
+              Discover small-batch beans, simple brewing tools and welcoming
+              coffee experiences made for everyday moments.
+            </p>
+
+            <div class="hero-actions">
+              <a class="primary-button" href="./coffee.html">
+                Explore the Roasts
+
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+
+              <a class="secondary-button" href="./events.html">
+                See Workshops
+              </a>
+            </div>
+
+            <div class="hero-note">
+              <span class="note-line"></span>
+
+              <span>
+                Freshly roasted - Carefully selected - Community minded
+              </span>
+            </div>
+          </div>
+
+          <div class="hero-feature-card">
+            <span class="feature-label"> THIS WEEK </span>
+
+            <h2>House Blend No. 04</h2>
+
+            <p>Chocolate, caramel and a soft citrus finish.</p>
+
+            <a href="./coffee.html">
+              Discover the blend
+
+              <i
+                class="fa-solid fa-arrow-up-right-from-square"
+                aria-hidden="true"
+              ></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Slideshow controls -->
+        <div
+          class="slider-controls"
+          role="group"
+          aria-label="Hero slideshow controls"
+        >
+          <button
+            class="slider-arrow"
+            id="prev-slide"
+            type="button"
+            aria-label="Previous slide"
+          >
+            <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+          </button>
+
+          <div
+            class="slide-dots"
+            role="group"
+            aria-label="Hero slideshow slides"
+          >
+            <button
+              class="slide-dot active"
+              type="button"
+              data-slide="0"
+              aria-label="Show slide 1"
+            ></button>
+
+            <button
+              class="slide-dot"
+              type="button"
+              data-slide="1"
+              aria-label="Show slide 2"
+            ></button>
+
+            <button
+              class="slide-dot"
+              type="button"
+              data-slide="2"
+              aria-label="Show slide 3"
+            ></button>
+          </div>
+
+          <button
+            class="slider-arrow"
+            id="next-slide"
+            type="button"
+            aria-label="Next slide"
+          >
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </button>
+        </div>
+      </section>
+
+      <!-- Intro -->
+      <section class="intro-section">
+        <div class="section-content intro-grid">
+          <div>
+            <p class="section-kicker">MORE THAN A CUP</p>
+
+            <h2 class="section-heading">
+              A small coffee house with a big curiosity.
+            </h2>
+          </div>
+
+          <div>
+            <p class="intro-text">
+              Bean Boutique brings together approachable specialty coffee,
+              useful brewing equipment and practical workshops. Whether you are
+              making your first pour-over or looking for a new daily roast,
+              there is always something to explore.
+            </p>
+
+            <a class="text-link" href="./coffee.html">
+              Browse our collection
+
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured areas -->
+      <section class="discover-section" aria-labelledby="discover-title">
+        <div class="section-content">
+          <div class="section-heading-row">
+            <div>
+              <p class="section-kicker">START HERE</p>
+
+              <h2 class="section-heading" id="discover-title">
+                Find your coffee rhythm
+              </h2>
+            </div>
+
+            <p class="section-side-text">
+              Three easy ways to make your next coffee a little better.
+            </p>
+          </div>
+
+          <div class="discover-grid">
+            <article class="discover-card card-dark">
+              <div class="card-number">01</div>
+
+              <div class="card-icon">
+                <i class="fa-solid fa-seedling" aria-hidden="true"></i>
+              </div>
+
+              <h3>Choose your beans</h3>
+
+              <p>
+                Explore light, balanced and deep roasts with tasting notes that
+                are easy to understand.
+              </p>
+
+              <a href="./coffee.html" aria-label="Explore coffee beans">
+                View coffee
+
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </article>
+
+            <article class="discover-card card-light">
+              <div class="card-number">02</div>
+
+              <div class="card-icon">
+                <i class="fa-solid fa-flask" aria-hidden="true"></i>
+              </div>
+
+              <h3>Build your brew</h3>
+
+              <p>
+                Find grinders, drippers and everyday tools that fit your brewing
+                style and routine.
+              </p>
+
+              <a href="./equipment.html" aria-label="Explore brewing equipment">
+                Shop equipment
+
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </article>
+
+            <article class="discover-card card-accent">
+              <div class="card-number">03</div>
+
+              <div class="card-icon">
+                <i class="fa-solid fa-people-group" aria-hidden="true"></i>
+              </div>
+
+              <h3>Learn together</h3>
+
+              <p>
+                Join relaxed workshops where you can practise brewing, tasting
+                and coffee basics.
+              </p>
+
+              <a href="./events.html" aria-label="Explore coffee workshops">
+                Join a workshop
+
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Search -->
+      <section class="search-strip" aria-labelledby="search-title">
+        <div class="section-content search-strip-inner">
+          <div>
+            <p class="section-kicker">LOOKING FOR SOMETHING?</p>
+
+            <h2 id="search-title">Search the Bean Boutique collection</h2>
+          </div>
+
+          <form
+            class="site-search"
+            id="site-search-form"
+            action="./coffee.html"
+          >
+            <label class="sr-only" for="site-search">
+              Search the coffee collection
+            </label>
+
+            <input
+              id="site-search"
+              name="search"
+              type="search"
+              placeholder='Try "Ethiopia" or "espresso"'
+              autocomplete="off"
+            >
+
+            <button type="submit" aria-label="Search">
+              <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Visit -->
+      <section class="visit-section" aria-labelledby="visit-title">
+        <div class="section-content">
+          <div class="section-heading-row">
+            <div>
+              <p class="section-kicker">COME BY</p>
+
+              <h2 class="section-heading" id="visit-title">
+                Your neighbourhood coffee stop
+              </h2>
+            </div>
+
+            <p class="section-side-text">
+              Drop in for a quiet cup, a quick chat or a new bag of beans.
+            </p>
+          </div>
+
+          <div class="visit-grid">
+            <div class="visit-details">
+              <div class="detail-item">
+                <span class="detail-icon">
+                  <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                </span>
+
+                <div>
+                  <h3>Find us</h3>
+
+                  <p>
+                    32 Merchant Street<br>
+                    Kyauktada Township, Yangon
+                  </p>
+                </div>
+              </div>
+
+              <div class="detail-item">
+                <span class="detail-icon">
+                  <i class="fa-regular fa-clock" aria-hidden="true"></i>
+                </span>
+
+                <div>
+                  <h3>Opening hours</h3>
+
+                  <p>
+                    Mon-Fri: 8:00 AM - 8:00 PM<br>
+                    Sat-Sun: 9:00 AM - 9:00 PM
+                  </p>
+                </div>
+              </div>
+
+              <div class="detail-item">
+                <span class="detail-icon">
+                  <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                </span>
+
+                <div>
+                  <h3>Say hello</h3>
+
+                  <p>
+                    <a href="tel:+959765432100"> +95 9 765 432 100 </a>
+
+                    <br>
+
+                    <a href="mailto:hello@beanandbloom.example">
+                      hello@beanandbloom.example
+                    </a>
+                  </p>
+                </div>
+              </div>
+
+              <a
+                class="outline-button"
+                href="https://www.google.com/maps/search/?api=1&amp;query=Merchant+Street+Yangon"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Open in Google Maps
+
+                <i class="fa-solid fa-location-arrow" aria-hidden="true"></i>
+              </a>
+            </div>
+
+            <!-- Interactive map widget -->
+            <div
+              class="map-widget"
+              role="region"
+              aria-label="Interactive map showing Bean Boutique Coffee House"
+            >
+              <iframe
+                title="Map showing Merchant Street in Yangon"
+                src="https://www.google.com/maps?q=Merchant+Street,+Yangon&amp;output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+
+              <div class="map-badge">
+                <i class="fa-solid fa-mug-hot" aria-hidden="true"></i>
+
+                Bean Boutique
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="section-content footer-grid">
+        <div class="footer-brand">
+          <a class="brand footer-brand-link" href="./index.html">
+            <span class="brand-mark" aria-hidden="true">
+              <i class="fa-solid fa-seedling"></i>
+            </span>
+
+            <span>
+              <strong>Bean Boutique</strong>
+              <small>COFFEE HOUSE</small>
+            </span>
+          </a>
+
+          <p>Thoughtful coffee, useful tools and a place to slow down.</p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Explore</h3>
+
+          <a href="./coffee.html"> Coffee </a>
+
+          <a href="./equipment.html"> Equipment </a>
+
+          <a href="./events.html"> Events </a>
+
+          <a href="./offers.html"> Offers </a>
+        </div>
+
+        <div class="footer-column">
+          <h3>Visit</h3>
+
+          <p>
+            32 Merchant Street<br>
+            Yangon, Myanmar
+          </p>
+
+          <p>
+            Mon-Fri: 8 AM - 8 PM<br>
+            Sat-Sun: 9 AM - 9 PM
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Follow along</h3>
+
+          <p>See new drinks, beans and workshop moments.</p>
+
+          <div
+            class="social-icons"
+            role="group"
+            aria-label="Social media links"
+          >
+            <a
+              class="social-link"
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
+              <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+            </a>
+
+            <a
+              class="social-link"
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+
+            <a
+              class="social-link"
+              href="https://www.youtube.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube"
+            >
+              <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom section-content">
+        <p>
+          &copy; 2026 Bean Boutique Coffee House. Designed for a welcoming
+          coffee experience.
+        </p>
+      </div>
+    </footer>
+
+    <script src="JS/script.js" defer></script>
+  </body>
+</html>

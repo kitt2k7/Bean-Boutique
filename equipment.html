@@ -1,0 +1,541 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta
+      content="Explore Bean Boutique's brewing equipment collection, including espresso machines, French presses, pour-over kits and coffee grinders."
+      name="description"
+    >
+    <title>Brewing Equipment | Bean Boutique</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:wght@600;700&amp;display=swap"
+      rel="stylesheet"
+    >
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      rel="stylesheet"
+    >
+    <!-- Main CSS -->
+    <link href="./CSS/style.css" rel="stylesheet">
+  </head>
+  <body class="equipment-page">
+    <!-- =========================
+         HEADER / NAVIGATION
+    ========================== -->
+    <header class="site-header">
+      <nav aria-label="Primary navigation" class="nav-bar section-content">
+        <a aria-label="Bean and Bloom home" class="brand" href="./index.html">
+          <span aria-hidden="true" class="brand-mark">
+            <i class="fa-solid fa-seedling"></i>
+          </span>
+          <span>
+            <strong>Bean Boutique</strong>
+            <small>COFFEE HOUSE</small>
+          </span>
+        </a>
+        <button
+          aria-controls="primary-menu"
+          aria-expanded="false"
+          aria-label="Open navigation menu"
+          class="menu-button"
+          id="menu-open-button"
+          type="button"
+        >
+          <i aria-hidden="true" class="fa-solid fa-bars"></i>
+        </button>
+        <div class="nav-menu" id="primary-menu">
+          <button
+            aria-label="Close navigation menu"
+            class="menu-button menu-close"
+            id="menu-close-button"
+            type="button"
+          >
+            <i aria-hidden="true" class="fa-solid fa-xmark"></i>
+          </button>
+          <a class="nav-link" href="./index.html">Home</a>
+          <a class="nav-link" href="./coffee.html">Coffee</a>
+          <a class="nav-link" href="./equipment.html">Equipment</a>
+          <a class="nav-link" href="./events.html">Events</a>
+          <a class="nav-link" href="./offers.html">Offers</a>
+          <a class="nav-link cart-link" href="./cart.html">
+            Cart
+            <span
+  class="cart-count"
+  id="cart-count"
+>0</span>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+    <main>
+      <!-- Equipment Introduction -->
+      <section class="equipment-section">
+        <div class="section-content">
+          <div class="equipment-intro">
+            <p class="section-kicker">BREWING EQUIPMENT</p>
+            <h1 class="section-title">Tools for your <em>perfect brew.</em></h1>
+            <p class="section-intro">
+              Explore our curated selection of premium brewing tools. Each piece
+              is chosen for quality, precision and the joy of making great
+              coffee at home.
+            </p>
+          </div>
+          <!-- Equipment Grid -->
+          <div class="equipment-grid">
+            <!-- =====================
+                         ESPRESSO MACHINE
+                    ====================== -->
+            <article class="equipment-card">
+              <div class="equipment-image">
+                <img
+                  alt="Espresso Machine"
+                  loading="lazy"
+                  src="./Images/espresso-machine.jpg"
+                >
+                <span class="equipment-number"> 01 </span>
+              </div>
+              <div class="equipment-content">
+                <p class="equipment-category">ESPRESSO</p>
+                <h2>Espresso Machine</h2>
+                <p class="description">
+                  Create café-quality espresso shots at home with a compact
+                  stainless-steel machine featuring a powerful steam wand and
+                  temperature control.
+                </p>
+                <div class="usage-tips">
+                  <strong>
+                    <i class="fa-solid fa-lightbulb"></i>
+                    Usage Tip
+                  </strong>
+                  <span>
+                    Use freshly ground beans and preheat your portafilter for
+                    better flavour and creamy crema.
+                  </span>
+                </div>
+                <div class="equipment-bottom">
+                  <span class="price"> $499.00 </span>
+                  <button
+                    class="add-to-cart"
+                    data-image="./Images/espresso-machine.jpg"
+                    data-name="Espresso Machine"
+                    data-price="499.00"
+                    type="button"
+                  >
+                    Add to Cart
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+            <!-- =====================
+                         FRENCH PRESS
+                    ====================== -->
+            <article class="equipment-card">
+              <div class="equipment-image">
+                <img
+                  alt="French Press"
+                  loading="lazy"
+                  src="./Images/french-press.jpg"
+                >
+                <span class="equipment-number"> 02 </span>
+              </div>
+              <div class="equipment-content">
+                <p class="equipment-category">IMMERSION BREWING</p>
+                <h2>French Press</h2>
+                <p class="description">
+                  A timeless brewing method that creates rich and full-bodied
+                  coffee with a durable glass body and fine mesh plunger.
+                </p>
+                <div class="usage-tips">
+                  <strong>
+                    <i class="fa-solid fa-lightbulb"></i>
+                    Usage Tip
+                  </strong>
+                  <span>
+                    Use coarse coffee grounds and steep for around four minutes
+                    for a balanced brew.
+                  </span>
+                </div>
+                <div class="equipment-bottom">
+                  <span class="price"> $39.00 </span>
+                  <button
+                    class="add-to-cart"
+                    data-image="./Images/french-press.jpg"
+                    data-name="French Press"
+                    data-price="39.00"
+                    type="button"
+                  >
+                    Add to Cart
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+            <!-- =====================
+                         POUR OVER KIT
+                    ====================== -->
+            <article class="equipment-card">
+              <div class="equipment-image">
+                <img
+                  alt="Pour Over Kit"
+                  loading="lazy"
+                  src="./Images/pour-over-kit.jpg"
+                >
+                <span class="equipment-number"> 03 </span>
+              </div>
+              <div class="equipment-content">
+                <p class="equipment-category">POUR OVER</p>
+                <h2>Pour Over Kit</h2>
+                <p class="description">
+                  An all-in-one brewing kit with a ceramic dripper, precision
+                  filters and gooseneck kettle for complete control over your
+                  brew.
+                </p>
+                <div class="usage-tips">
+                  <strong>
+                    <i class="fa-solid fa-lightbulb"></i>
+                    Usage Tip
+                  </strong>
+                  <span>
+                    Pour slowly in a spiral motion and keep the water
+                    temperature around 92–96°C.
+                  </span>
+                </div>
+                <div class="equipment-bottom">
+                  <span class="price"> $79.00 </span>
+                  <button
+                    class="add-to-cart"
+                    data-image="./Images/pour-over-kit.jpg"
+                    data-name="Pour Over Kit"
+                    data-price="79.00"
+                    type="button"
+                  >
+                    Add to Cart
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+            <!-- =====================
+                         COFFEE GRINDER
+                    ====================== -->
+            <article class="equipment-card">
+              <div class="equipment-image">
+                <img
+                  alt="Coffee Grinder"
+                  loading="lazy"
+                  src="./Images/coffee-grinder.jpg"
+                >
+                <span class="equipment-number"> 04 </span>
+              </div>
+              <div class="equipment-content">
+                <p class="equipment-category">GRINDING</p>
+                <h2>Coffee Grinder</h2>
+                <p class="description">
+                  A precision burr grinder with adjustable settings for
+                  espresso, pour over and French press, designed for consistent
+                  grinding.
+                </p>
+                <div class="usage-tips">
+                  <strong>
+                    <i class="fa-solid fa-lightbulb"></i>
+                    Usage Tip
+                  </strong>
+                  <span>
+                    Grind only the amount you need because freshly ground beans
+                    provide better flavour.
+                  </span>
+                </div>
+                <div class="equipment-bottom">
+                  <span class="price"> $120.00 </span>
+                  <button
+                    class="add-to-cart"
+                    data-image="./Images/coffee-grinder.jpg"
+                    data-name="Coffee Grinder"
+                    data-price="120.00"
+                    type="button"
+                  >
+                    Add to Cart
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+            <!-- =====================
+                         DIGITAL COFFEE SCALE
+                    ====================== -->
+            <article class="equipment-card">
+              <div class="equipment-image">
+                <img
+                  alt="Digital Coffee Scale"
+                  loading="lazy"
+                  src="./Images/digital-coffee-scale.jpg"
+                >
+                <span class="equipment-number"> 05 </span>
+              </div>
+              <div class="equipment-content">
+                <p class="equipment-category">PRECISION</p>
+                <h2>Digital Coffee Scale</h2>
+                <p class="description">
+                  A compact digital scale for accurate coffee and water
+                  measurements, helping you repeat your favourite recipes
+                  consistently.
+                </p>
+                <div class="usage-tips">
+                  <strong>
+                    <i class="fa-solid fa-lightbulb"></i>
+                    Usage Tip
+                  </strong>
+                  <span>
+                    Tare the brewing vessel first, then measure coffee and water
+                    before you start pouring.
+                  </span>
+                </div>
+                <div class="equipment-bottom">
+                  <span class="price"> $49.00 </span>
+                  <button
+                    class="add-to-cart"
+                    data-image="./Images/digital-coffee-scale.jpg"
+                    data-name="Digital Coffee Scale"
+                    data-price="49.00"
+                    type="button"
+                  >
+                    Add to Cart
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+            <!-- =====================
+                         GOOSENECK KETTLE
+                    ====================== -->
+            <article class="equipment-card">
+              <div class="equipment-image">
+                <img
+                  alt="Gooseneck Kettle"
+                  loading="lazy"
+                  src="./Images/gooseneck-kettle.jpg"
+                >
+                <span class="equipment-number"> 06 </span>
+              </div>
+              <div class="equipment-content">
+                <p class="equipment-category">KETTLE</p>
+                <h2>Gooseneck Kettle</h2>
+                <p class="description">
+                  A temperature-controlled gooseneck kettle designed for smooth,
+                  precise pouring during pour-over brewing.
+                </p>
+                <div class="usage-tips">
+                  <strong>
+                    <i class="fa-solid fa-lightbulb"></i>
+                    Usage Tip
+                  </strong>
+                  <span>
+                    Use a slow, steady pour and adjust the flow to control
+                    extraction.
+                  </span>
+                </div>
+                <div class="equipment-bottom">
+                  <span class="price"> $89.00 </span>
+                  <button
+                    class="add-to-cart"
+                    data-image="./Images/gooseneck-kettle.jpg"
+                    data-name="Gooseneck Kettle"
+                    data-price="89.00"
+                    type="button"
+                  >
+                    Add to Cart
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+            <!-- =====================
+                         AEROPRESS BREWER
+                    ====================== -->
+            <article class="equipment-card">
+              <div class="equipment-image">
+                <img
+                  alt="AeroPress Brewer"
+                  loading="lazy"
+                  src="./Images/aeropress-brewer.jpg"
+                >
+                <span class="equipment-number"> 07 </span>
+              </div>
+              <div class="equipment-content">
+                <p class="equipment-category">TRAVEL BREWING</p>
+                <h2>AeroPress Brewer</h2>
+                <p class="description">
+                  A compact brewer made for quick, clean cups at home, in the
+                  office or while travelling.
+                </p>
+                <div class="usage-tips">
+                  <strong>
+                    <i class="fa-solid fa-lightbulb"></i>
+                    Usage Tip
+                  </strong>
+                  <span>
+                    Use medium-fine grounds and experiment with brew time to
+                    find your preferred strength.
+                  </span>
+                </div>
+                <div class="equipment-bottom">
+                  <span class="price"> $45.00 </span>
+                  <button
+                    class="add-to-cart"
+                    data-image="./Images/aeropress-brewer.jpg"
+                    data-name="AeroPress Brewer"
+                    data-price="45.00"
+                    type="button"
+                  >
+                    Add to Cart
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+            <!-- =====================
+                         COLD BREW MAKER
+                    ====================== -->
+            <article class="equipment-card">
+              <div class="equipment-image">
+                <img
+                  alt="Cold Brew Maker"
+                  loading="lazy"
+                  src="./Images/cold-brew-maker.webp"
+                >
+                <span class="equipment-number"> 08 </span>
+              </div>
+              <div class="equipment-content">
+                <p class="equipment-category">COLD BREW</p>
+                <h2>Cold Brew Maker</h2>
+                <p class="description">
+                  A simple cold-brew setup for making smooth, low-acidity coffee
+                  that is ready to chill and serve.
+                </p>
+                <div class="usage-tips">
+                  <strong>
+                    <i class="fa-solid fa-lightbulb"></i>
+                    Usage Tip
+                  </strong>
+                  <span>
+                    Steep coarse grounds in cold water for 12–16 hours, then
+                    strain and refrigerate.
+                  </span>
+                </div>
+                <div class="equipment-bottom">
+                  <span class="price"> $59.00 </span>
+                  <button
+                    class="add-to-cart"
+                    data-image="./Images/cold-brew-maker.webp"
+                    data-name="Cold Brew Maker"
+                    data-price="59.00"
+                    type="button"
+                  >
+                    Add to Cart
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- Equipment CTA -->
+      <section class="equipment-cta">
+        <div class="section-content equipment-cta-inner">
+          <div>
+            <p class="section-kicker">READY TO BREW?</p>
+            <h2>Find the beans for your new equipment.</h2>
+          </div>
+          <a class="primary-button" href="coffee.html">
+            Explore Coffee
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </section>
+    </main>
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer class="site-footer">
+      <div class="section-content footer-grid">
+        <div class="footer-brand">
+          <a class="brand footer-brand-link" href="./index.html">
+            <span aria-hidden="true" class="brand-mark"
+              ><i class="fa-solid fa-seedling"></i
+            ></span>
+            <span>
+              <strong>Bean Boutique</strong>
+              <small>COFFEE HOUSE</small>
+            </span>
+          </a>
+          <p>Thoughtful coffee, useful tools and a place to slow down.</p>
+        </div>
+        <div class="footer-column">
+          <h3>Explore</h3>
+          <a href="./coffee.html">Coffee</a>
+          <a href="./equipment.html">Equipment</a>
+          <a href="./events.html">Events</a>
+          <a href="./offers.html">Offers</a>
+        </div>
+        <div class="footer-column">
+          <h3>Visit</h3>
+          <p>32 Merchant Street<br>Yangon, Myanmar</p>
+          <p>Mon–Fri: 8 AM – 8 PM<br>Sat–Sun: 9 AM – 9 PM</p>
+        </div>
+        <div class="footer-column">
+          <h3>Follow along</h3>
+          <p>See new drinks, beans and workshop moments.</p>
+		<div class="social-icons">            
+		<a
+              aria-label="Facebook"
+              class="social-link"
+              href="https://www.facebook.com/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <i aria-hidden="true" class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a
+              aria-label="Instagram"
+              class="social-link"
+              href="https://www.instagram.com/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <i aria-hidden="true" class="fa-brands fa-instagram"></i>
+            </a>
+            <a
+              aria-label="YouTube"
+              class="social-link"
+              href="https://www.youtube.com/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <i aria-hidden="true" class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom section-content">
+        <p>
+          © 2026 Bean Boutique Coffee House. Designed for a welcoming coffee
+          experience.
+        </p>
+      </div>
+    </footer>
+    <!-- JavaScript -->
+    <script defer="" src="./JS/script.js"></script>
+    <script defer="" src="./JS/equipment.js"></script>
+  </body>
+</html>

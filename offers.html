@@ -1,0 +1,583 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Offers & Subscriptions | Bean Boutique</title>
+
+    <meta
+      name="description"
+      content="Discover Bean Boutique special coffee offers and flexible coffee subscription plans."
+    >
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./CSS/style.css">
+  </head>
+
+  <body class="offers-page">
+    <!-- =========================
+         HEADER
+    ========================== -->
+    <header class="site-header">
+      <nav class="nav-bar section-content" aria-label="Primary navigation">
+        <a class="brand" href="./index.html" aria-label="Bean and Bloom home">
+          <span class="brand-mark" aria-hidden="true">
+            <i class="fa-solid fa-seedling"></i>
+          </span>
+          <span>
+            <strong>Bean Boutique</strong>
+            <small>COFFEE HOUSE</small>
+          </span>
+        </a>
+
+        <button
+          class="menu-button"
+          id="menu-open-button"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="primary-menu"
+        >
+          <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
+
+        <div class="nav-menu" id="primary-menu">
+          <button
+            class="menu-button menu-close"
+            id="menu-close-button"
+            type="button"
+            aria-label="Close navigation menu"
+          >
+            <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+          </button>
+
+          <a class="nav-link" href="./index.html">Home</a>
+          <a class="nav-link" href="./coffee.html">Coffee</a>
+          <a class="nav-link" href="./equipment.html">Equipment</a>
+          <a class="nav-link" href="./events.html">Events</a>
+          <a class="nav-link" href="./offers.html">Offers</a>
+          <a class="nav-link cart-link" href="./cart.html">
+            Cart
+            <span
+  class="cart-count"
+  id="cart-count"
+>0</span>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- =========================
+             OFFERS HERO
+        ========================== -->
+      <section class="offers-hero">
+        <div class="section-content offers-hero-grid">
+          <div class="offers-hero-content">
+            <p class="section-kicker">Better coffee, better value</p>
+
+            <h1>
+              More coffee.
+              <em>More reasons to stay.</em>
+            </h1>
+
+            <p class="offers-hero-text">
+              Enjoy seasonal promotions, member benefits and flexible coffee
+              deliveries designed around your everyday routine.
+            </p>
+
+            <div class="offers-hero-actions">
+              <a href="#subscriptions" class="primary-button">
+                Explore subscriptions
+                <i class="fa-solid fa-arrow-down"></i>
+              </a>
+
+              <a href="#special-offers" class="secondary-button">
+                View offers
+              </a>
+            </div>
+          </div>
+
+          <div class="offers-hero-card">
+            <div class="offer-card-top">
+              <span class="offer-badge"> MEMBER OFFER </span>
+
+              <i class="fa-solid fa-gift"></i>
+            </div>
+
+            <div class="offer-card-content">
+              <span> Save on your </span>
+
+              <strong> next order </strong>
+
+              <p>
+                Join a coffee subscription and receive member-only benefits.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+             SPECIAL OFFERS
+        ========================== -->
+      <section class="special-offers-section" id="special-offers">
+        <div class="section-content">
+          <div class="offers-section-heading">
+            <div>
+              <p class="section-kicker">Special promotions</p>
+
+              <h2 class="section-heading">
+                A little extra
+                <span>for coffee lovers.</span>
+              </h2>
+            </div>
+
+            <p>
+              Seasonal deals and simple rewards to make your next coffee moment
+              even better.
+            </p>
+          </div>
+
+          <div class="special-offers-grid">
+            <!-- Offer 01 -->
+            <article class="special-offer-card">
+              <div class="special-offer-icon">
+                <i class="fa-solid fa-percent"></i>
+              </div>
+
+              <span class="offer-label"> First order </span>
+
+              <h3>10% off your first purchase</h3>
+
+              <p>
+                New customers can enjoy 10% off their first coffee order when
+                they sign up for our email updates.
+              </p>
+
+              <a href="index.html#discountModal">
+                Join the list
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </article>
+
+            <!-- Offer 02 -->
+            <article class="special-offer-card offer-featured">
+              <div class="special-offer-icon">
+                <i class="fa-solid fa-box-open"></i>
+              </div>
+
+              <span class="offer-label"> Monthly favourite </span>
+
+              <h3>Coffee bundle savings</h3>
+
+              <p>
+                Choose three selected coffee blends and enjoy a simple bundle
+                price for your monthly supply.
+              </p>
+
+              <a href="coffee.html">
+                Shop coffee
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </article>
+
+            <!-- Offer 03 -->
+            <article class="special-offer-card">
+              <div class="special-offer-icon">
+                <i class="fa-solid fa-users"></i>
+              </div>
+
+              <span class="offer-label"> Community </span>
+
+              <h3>Workshop member perk</h3>
+
+              <p>
+                Subscribers receive early access to selected coffee workshops
+                and community events.
+              </p>
+
+              <a href="events.html">
+                Explore events
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+             SUBSCRIPTION INTRO
+        ========================== -->
+      <section class="subscription-intro" id="subscriptions">
+        <div class="section-content subscription-intro-grid">
+          <div>
+            <p class="section-kicker">Coffee subscription</p>
+
+            <h2>
+              Your coffee,
+              <em>your schedule.</em>
+            </h2>
+          </div>
+
+          <p>
+            Choose how much coffee you need and how often you want it delivered.
+            Every plan is designed to make your regular coffee routine easier.
+          </p>
+        </div>
+      </section>
+
+      <!-- =========================
+             SUBSCRIPTION PLANS
+        ========================== -->
+      <section class="subscription-section">
+  <div class="section-content">
+    <h2 class="sr-only">Coffee Subscription Plans</h2>
+
+    <div class="subscription-grid">
+            <!-- Plan 01 -->
+            <article class="subscription-card">
+              <div class="subscription-number">01</div>
+
+              <p class="subscription-label">For casual drinkers</p>
+
+              <h3>Daily Cup</h3>
+
+              <p class="subscription-description">
+                A simple plan for customers who want fresh coffee without a
+                large monthly delivery.
+              </p>
+
+              <div class="subscription-price">
+                <strong>$18</strong>
+                <span>/ month</span>
+              </div>
+
+              <div class="subscription-divider"></div>
+
+              <h4>Benefits</h4>
+
+              <ul class="benefits-list">
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  1 coffee bag per month
+                </li>
+
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  Choose your blend
+                </li>
+
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  Flexible delivery
+                </li>
+
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  Member email updates
+                </li>
+              </ul>
+
+              <a
+                href="mailto:subscriptions@beanandbloom.com?subject=Daily%20Cup%20Subscription"
+                class="subscription-button"
+              >
+                Choose Daily Cup
+              </a>
+            </article>
+
+            <!-- Plan 02 -->
+            <article class="subscription-card subscription-popular">
+              <span class="popular-badge"> MOST POPULAR </span>
+
+              <div class="subscription-number">02</div>
+
+              <p class="subscription-label">For regular drinkers</p>
+
+              <h3>Coffee Ritual</h3>
+
+              <p class="subscription-description">
+                A balanced monthly plan for coffee drinkers who enjoy having
+                fresh beans ready at home.
+              </p>
+
+              <div class="subscription-price">
+                <strong>$34</strong>
+                <span>/ month</span>
+              </div>
+
+              <div class="subscription-divider"></div>
+
+              <h4>Benefits</h4>
+
+              <ul class="benefits-list">
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  2 coffee bags per month
+                </li>
+
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  Choose your blends
+                </li>
+
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  Free standard delivery
+                </li>
+
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  Early event access
+                </li>
+
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  Subscriber-only offers
+                </li>
+              </ul>
+
+              <a
+                href="mailto:subscriptions@beanandbloom.com?subject=Coffee%20Ritual%20Subscription"
+                class="subscription-button"
+              >
+                Choose Coffee Ritual
+              </a>
+            </article>
+
+            <!-- Plan 03 -->
+            <article class="subscription-card">
+              <div class="subscription-number">03</div>
+
+              <p class="subscription-label">For serious coffee lovers</p>
+
+              <h3>Roaster's Table</h3>
+
+              <p class="subscription-description">
+                A larger monthly selection for customers who want to explore
+                different coffees throughout the month.
+              </p>
+
+              <div class="subscription-price">
+                <strong>$52</strong>
+                <span>/ month</span>
+              </div>
+
+              <div class="subscription-divider"></div>
+
+              <h4>Benefits</h4>
+
+              <ul class="benefits-list">
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  3 coffee bags per month
+                </li>
+
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  Seasonal coffee selection
+                </li>
+
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  Free delivery
+                </li>
+
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  Workshop priority booking
+                </li>
+
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  Exclusive tasting notes
+                </li>
+              </ul>
+
+              <a
+                href="mailto:subscriptions@beanandbloom.com?subject=Roaster%27s%20Table%20Subscription"
+                class="subscription-button"
+              >
+                Choose Roaster's Table
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+             HOW IT WORKS
+        ========================== -->
+      <section class="subscription-steps">
+        <div class="section-content">
+          <div class="steps-heading">
+            <p class="section-kicker">How it works</p>
+
+            <h2 class="section-heading">
+              Three simple steps to
+              <span>better coffee.</span>
+            </h2>
+          </div>
+
+          <div class="steps-grid">
+            <article class="step-card">
+              <span class="step-number"> 01 </span>
+
+              <i class="fa-solid fa-mug-hot"></i>
+
+              <h3>Choose your plan</h3>
+
+              <p>
+                Select the subscription level that matches your coffee routine.
+              </p>
+            </article>
+
+            <article class="step-card">
+              <span class="step-number"> 02 </span>
+
+              <i class="fa-solid fa-sliders"></i>
+
+              <h3>Pick your coffee</h3>
+
+              <p>
+                Choose your preferred blends or explore seasonal selections.
+              </p>
+            </article>
+
+            <article class="step-card">
+              <span class="step-number"> 03 </span>
+
+              <i class="fa-solid fa-truck-fast"></i>
+
+              <h3>Receive & enjoy</h3>
+
+              <p>
+                Your coffee arrives according to your selected delivery
+                schedule.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+             SUBSCRIPTION CTA
+        ========================== -->
+      <section class="offers-cta">
+        <div class="section-content offers-cta-inner">
+          <div>
+            <p class="section-kicker">Ready for your next cup?</p>
+
+            <h2>Make fresh coffee part of your everyday ritual.</h2>
+          </div>
+
+          <div class="offers-cta-actions">
+            <a
+              href="mailto:subscriptions@beanandbloom.com?subject=Bean%20%26%20Bloom%20Subscription%20Enquiry"
+              class="primary-button"
+            >
+              Start a subscription
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <a href="coffee.html" class="secondary-button"> Browse coffee </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer class="site-footer">
+      <div class="section-content footer-grid">
+        <div class="footer-brand">
+          <a class="brand footer-brand-link" href="./index.html">
+            <span class="brand-mark" aria-hidden="true"
+              ><i class="fa-solid fa-seedling"></i
+            ></span>
+            <span>
+              <strong>Bean Boutique</strong>
+              <small>COFFEE HOUSE</small>
+            </span>
+          </a>
+          <p>Thoughtful coffee, useful tools and a place to slow down.</p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Explore</h3>
+          <a href="./coffee.html">Coffee</a>
+          <a href="./equipment.html">Equipment</a>
+          <a href="./events.html">Events</a>
+          <a href="./offers.html">Offers</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>Visit</h3>
+          <p>32 Merchant Street<br>Yangon, Myanmar</p>
+          <p>Mon–Fri: 8 AM – 8 PM<br>Sat–Sun: 9 AM – 9 PM</p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Follow along</h3>
+          <p>See new drinks, beans and workshop moments.</p>
+<div class="social-icons">            <a
+              class="social-link"
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
+              <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+            </a>
+            <a
+              class="social-link"
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a
+              class="social-link"
+              href="https://www.youtube.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube"
+            >
+              <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom section-content">
+        <p>
+          &copy; 2026 Bean Boutique Coffee House. Designed for a welcoming
+          coffee experience.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Main JavaScript -->
+    <script src="./JS/script.js" defer></script>
+  </body>
+</html>

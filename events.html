@@ -1,0 +1,610 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Events & Workshops | Bean Boutique</title>
+
+    <meta
+      name="description"
+      content="Join Bean Boutique coffee tasting sessions, brewing classes and coffee workshops."
+    >
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./CSS/style.css">
+
+    <!-- reCAPTCHA v2 test widget for the HTML/CSS prototype -->
+  </head>
+
+  <body class="events-page">
+    <!-- =========================
+         HEADER
+    ========================== -->
+    <header class="site-header">
+      <nav class="nav-bar section-content" aria-label="Primary navigation">
+        <a class="brand" href="./index.html" aria-label="Bean and Bloom home">
+          <span class="brand-mark" aria-hidden="true">
+            <i class="fa-solid fa-seedling"></i>
+          </span>
+          <span>
+            <strong>Bean Boutique</strong>
+            <small>COFFEE HOUSE</small>
+          </span>
+        </a>
+
+        <button
+          class="menu-button"
+          id="menu-open-button"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="primary-menu"
+        >
+          <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
+
+        <div class="nav-menu" id="primary-menu">
+          <button
+            class="menu-button menu-close"
+            id="menu-close-button"
+            type="button"
+            aria-label="Close navigation menu"
+          >
+            <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+          </button>
+
+          <a class="nav-link" href="./index.html">Home</a>
+          <a class="nav-link" href="./coffee.html">Coffee</a>
+          <a class="nav-link" href="./equipment.html">Equipment</a>
+          <a class="nav-link" href="./events.html">Events</a>
+          <a class="nav-link" href="./offers.html">Offers</a>
+          <a class="nav-link cart-link" href="./cart.html">
+            Cart
+            <span
+  class="cart-count"
+  id="cart-count"
+>0</span>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- =========================
+             EVENTS INTRO
+        ========================== -->
+      <section class="events-intro">
+        <div class="section-content events-intro-grid">
+          <div class="events-intro-content">
+            <p class="section-kicker">Gather. Learn. Taste.</p>
+
+            <h1>
+              Good coffee is better
+              <em>together.</em>
+            </h1>
+
+            <p class="intro-text">
+              Discover coffee tasting sessions, practical brewing classes and
+              friendly workshops designed for coffee lovers of every experience
+              level.
+            </p>
+
+            <a href="#upcoming-events" class="primary-button">
+              View upcoming events
+              <i class="fa-solid fa-arrow-down"></i>
+            </a>
+          </div>
+
+          <div class="events-intro-card">
+            <div class="event-icon-large">
+              <i class="fa-solid fa-mug-hot"></i>
+            </div>
+
+            <p class="small-label">This month</p>
+
+            <h2>Taste something new.</h2>
+
+            <p>
+              Meet other coffee lovers and learn simple techniques you can use
+              at home.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+             UPCOMING EVENTS
+        ========================== -->
+      <section class="events-section" id="upcoming-events">
+        <div class="section-content">
+          <div class="events-section-heading">
+            <div>
+              <p class="section-kicker">Upcoming events</p>
+
+              <h2 class="section-heading">
+                What's happening
+                <span>at Bean Boutique.</span>
+              </h2>
+            </div>
+
+            <p>Reserve a place using the registration form below.</p>
+          </div>
+
+          <div class="events-grid">
+            <!-- Event 01 -->
+            <article class="event-card">
+              <div class="event-date">
+                <strong>05</strong>
+                <span>OCT</span>
+              </div>
+
+              <div class="event-card-content">
+                <p class="event-category">Coffee Tasting</p>
+
+                <h3>Coffee Tasting Night</h3>
+
+                <p>
+                  Explore different coffee flavours and compare roast profiles
+                  with our coffee team.
+                </p>
+
+                <div class="event-details">
+                  <span>
+                    <i class="fa-regular fa-clock"></i>
+                    6:30 PM – 8:00 PM
+                  </span>
+
+                  <span>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Bean Boutique
+                  </span>
+                </div>
+
+                <div class="event-bottom">
+                  <span class="event-price"> $18 </span>
+
+                  <a
+                    href="#registration"
+                    class="event-link"
+                    aria-label="Register for Coffee Tasting Night"
+                  >
+                    Register
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Event 02 -->
+            <article class="event-card">
+              <div class="event-date">
+                <strong>12</strong>
+                <span>OCT</span>
+              </div>
+
+              <div class="event-card-content">
+                <p class="event-category">Brewing Class</p>
+
+                <h3>Pour Over Basics</h3>
+
+                <p>
+                  Learn how to prepare a balanced pour over coffee using simple
+                  brewing techniques.
+                </p>
+
+                <div class="event-details">
+                  <span>
+                    <i class="fa-regular fa-clock"></i>
+                    10:00 AM – 11:30 AM
+                  </span>
+
+                  <span>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Brewing Bar
+                  </span>
+                </div>
+
+                <div class="event-bottom">
+                  <span class="event-price"> $25 </span>
+
+                  <a
+                    href="#registration"
+                    class="event-link"
+                    aria-label="Register for Pour Over Basics"
+                  >
+                    Register
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Event 03 -->
+            <article class="event-card">
+              <div class="event-date">
+                <strong>19</strong>
+                <span>OCT</span>
+              </div>
+
+              <div class="event-card-content">
+                <p class="event-category">Community</p>
+
+                <h3>Saturday Coffee Club</h3>
+
+                <p>
+                  Start your weekend with fresh coffee and a relaxed
+                  conversation with fellow coffee lovers.
+                </p>
+
+                <div class="event-details">
+                  <span>
+                    <i class="fa-regular fa-clock"></i>
+                    9:30 AM – 11:00 AM
+                  </span>
+
+                  <span>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Garden Room
+                  </span>
+                </div>
+
+                <div class="event-bottom">
+                  <span class="event-price"> Free </span>
+
+                  <a
+                    href="#registration"
+                    class="event-link"
+                    aria-label="Register for Saturday Coffee Club"
+                  >
+                    Register
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Event 04 -->
+            <article class="event-card">
+              <div class="event-date">
+                <strong>26</strong>
+                <span>OCT</span>
+              </div>
+
+              <div class="event-card-content">
+                <p class="event-category">Espresso Class</p>
+
+                <h3>Espresso at Home</h3>
+
+                <p>
+                  Learn the basics of espresso preparation, grinding and
+                  extracting coffee at home.
+                </p>
+
+                <div class="event-details">
+                  <span>
+                    <i class="fa-regular fa-clock"></i>
+                    2:00 PM – 3:30 PM
+                  </span>
+
+                  <span>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Training Bar
+                  </span>
+                </div>
+
+                <div class="event-bottom">
+                  <span class="event-price"> $30 </span>
+
+                  <a
+                    href="#registration"
+                    class="event-link"
+                    aria-label="Register for Espresso at Home"
+                  >
+                    Register
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+             WORKSHOPS
+        ========================== -->
+      <section class="workshops-section" id="workshops">
+        <div class="section-content">
+          <div class="workshops-heading">
+            <p class="section-kicker">Learn at your own pace</p>
+
+            <h2 class="section-heading">
+              Practical coffee
+              <span>workshops.</span>
+            </h2>
+
+            <p>
+              Our workshops focus on practical skills that you can continue
+              using in your own kitchen.
+            </p>
+          </div>
+
+          <div class="workshops-grid">
+            <!-- Workshop 01 -->
+            <article class="workshop-card workshop-dark">
+              <span class="workshop-number"> 01 </span>
+
+              <div class="workshop-icon">
+                <i class="fa-solid fa-filter"></i>
+              </div>
+
+              <p class="small-label">Beginner friendly</p>
+
+              <h3>Pour Over</h3>
+
+              <p>
+                Understand grind size, water temperature and pouring technique
+                for a clean cup.
+              </p>
+            </article>
+
+            <!-- Workshop 02 -->
+            <article class="workshop-card workshop-light">
+              <span class="workshop-number"> 02 </span>
+
+              <div class="workshop-icon">
+                <i class="fa-solid fa-mug-saucer"></i>
+              </div>
+
+              <p class="small-label">Beginner friendly</p>
+
+              <h3>French Press</h3>
+
+              <p>
+                Learn a simple immersion method and how to adjust strength and
+                brewing time.
+              </p>
+            </article>
+
+            <!-- Workshop 03 -->
+            <article class="workshop-card workshop-accent">
+              <span class="workshop-number"> 03 </span>
+
+              <div class="workshop-icon">
+                <i class="fa-solid fa-gauge-high"></i>
+              </div>
+
+              <p class="small-label">Intermediate</p>
+
+              <h3>Espresso</h3>
+
+              <p>
+                Practise espresso fundamentals including dosing, extraction and
+                basic milk preparation.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+             ONLINE REGISTRATION
+        ========================== -->
+      <section class="event-booking" id="registration">
+        <div class="section-content event-booking-inner">
+          <div class="event-booking-content">
+            <p class="section-kicker">Online registration</p>
+
+            <h2>Save your place at the next event.</h2>
+
+            <p>
+              Complete the form to register your interest. Your details will be
+              sent to our events team.
+            </p>
+
+            <div class="event-contact">
+              <a href="mailto:events@beanandbloom.com">
+                <i class="fa-solid fa-envelope"></i>
+                events@beanandbloom.com
+              </a>
+
+              <a href="tel:+15035550123">
+                <i class="fa-solid fa-phone"></i>
+                +1 503 555 0123
+              </a>
+            </div>
+          </div>
+
+          <!-- Registration Form -->
+          <form
+            class="event-registration-form"
+            action="mailto:events@beanandbloom.com"
+            method="post"
+            enctype="text/plain"
+          >
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name"> First Name </label>
+
+                <input
+                  type="text"
+                  id="first-name"
+                  name="First Name"
+                  placeholder="Enter your first name"
+                  autocomplete="given-name"
+                  required
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="last-name"> Last Name </label>
+
+                <input
+                  type="text"
+                  id="last-name"
+                  name="Last Name"
+                  placeholder="Enter your last name"
+                  autocomplete="family-name"
+                  required
+                >
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="registration-email"> Email Address </label>
+
+              <input
+                type="email"
+                id="registration-email"
+                name="Email Address"
+                placeholder="you@example.com"
+                autocomplete="email"
+                required
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="event-choice"> Select an Event </label>
+
+              <select id="event-choice" name="Selected Event" required>
+                <option value="">Choose an event</option>
+
+                <option value="Coffee Tasting Night">
+                  Coffee Tasting Night – 05 October
+                </option>
+
+                <option value="Pour Over Basics">
+                  Pour Over Basics – 12 October
+                </option>
+
+                <option value="Saturday Coffee Club">
+                  Saturday Coffee Club – 19 October
+                </option>
+
+                <option value="Espresso at Home">
+                  Espresso at Home – 26 October
+                </option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message"> Message <span>(Optional)</span> </label>
+
+              <textarea
+                id="message"
+                name="Message"
+                rows="4"
+                placeholder="Tell us if you have any questions..."
+              ></textarea>
+            </div>
+
+            <button type="submit" class="registration-submit">
+              Register Now
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+
+            <p class="form-note">
+              <i class="fa-solid fa-circle-info"></i>
+              Your registration will be confirmed after you submit this form.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer class="site-footer">
+      <div class="section-content footer-grid">
+        <div class="footer-brand">
+          <a class="brand footer-brand-link" href="./index.html">
+            <span class="brand-mark" aria-hidden="true"
+              ><i class="fa-solid fa-seedling"></i
+            ></span>
+            <span>
+              <strong>Bean Boutique</strong>
+              <small>COFFEE HOUSE</small>
+            </span>
+          </a>
+          <p>Thoughtful coffee, useful tools and a place to slow down.</p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Explore</h3>
+          <a href="./coffee.html">Coffee</a>
+          <a href="./equipment.html">Equipment</a>
+          <a href="./events.html">Events</a>
+          <a href="./offers.html">Offers</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>Visit</h3>
+          <p>32 Merchant Street<br>Yangon, Myanmar</p>
+          <p>Mon–Fri: 8 AM – 8 PM<br>Sat–Sun: 9 AM – 9 PM</p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Follow along</h3>
+          <p>See new drinks, beans and workshop moments.</p>
+	<div class="social-icons">            
+		<a
+              class="social-link"
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
+              <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+            </a>
+            <a
+              class="social-link"
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a
+              class="social-link"
+              href="https://www.youtube.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube"
+            >
+              <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom section-content">
+        <p>
+          &copy; 2026 Bean Boutique Coffee House. Designed for a welcoming
+          coffee experience.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Main JavaScript -->
+    <script src="./JS/script.js" defer></script>
+    <script src="./JS/event.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Your Cart | Bean Boutique</title>
+
+    <meta
+      name="description"
+      content="Review your selected coffee and brewing equipment at Bean Boutique."
+    >
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./CSS/style.css">
+  </head>
+
+  <body class="cart-page">
+    <!-- =========================
+         HEADER
+    ========================== -->
+    <header class="site-header">
+      <nav class="nav-bar section-content" aria-label="Primary navigation">
+        <a class="brand" href="./index.html" aria-label="Bean and Bloom home">
+          <span class="brand-mark" aria-hidden="true">
+            <i class="fa-solid fa-seedling"></i>
+          </span>
+          <span>
+            <strong>Bean Boutique</strong>
+            <small>COFFEE HOUSE</small>
+          </span>
+        </a>
+
+        <button
+          class="menu-button"
+          id="menu-open-button"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="primary-menu"
+        >
+          <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
+
+        <div class="nav-menu" id="primary-menu">
+          <button
+            class="menu-button menu-close"
+            id="menu-close-button"
+            type="button"
+            aria-label="Close navigation menu"
+          >
+            <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+          </button>
+
+          <a class="nav-link" href="./index.html">Home</a>
+          <a class="nav-link" href="./coffee.html">Coffee</a>
+          <a class="nav-link" href="./equipment.html">Equipment</a>
+          <a class="nav-link" href="./events.html">Events</a>
+          <a class="nav-link" href="./offers.html">Offers</a>
+          <a class="nav-link cart-link" href="./cart.html">
+            Cart
+            <span
+  class="cart-count"
+  id="cart-count"
+>0</span>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- =========================
+         CART HERO
+    ========================== -->
+    <main>
+      <section class="cart-hero">
+        <div class="section-content cart-hero-content">
+          <div>
+            <p class="section-kicker">YOUR SELECTION</p>
+
+            <h1>
+              Your coffee
+              <em>basket.</em>
+            </h1>
+
+            <p>
+              Take a look at the coffee and brewing equipment you've selected.
+              You can change quantities or remove items before checkout.
+            </p>
+          </div>
+
+          <div class="cart-hero-icon" aria-hidden="true">
+            <i class="fa-solid fa-bag-shopping"></i>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+             CART CONTENT
+        ========================== -->
+      <section class="cart-section">
+        <div class="section-content">
+          <!-- Empty Cart -->
+          <div id="cart-empty" class="cart-empty">
+            <div class="cart-empty-icon">
+              <i class="fa-solid fa-mug-hot"></i>
+            </div>
+
+            <p class="section-kicker">NOTHING HERE YET</p>
+
+            <h2>Your cart is empty.</h2>
+
+            <p>Discover our freshly roasted coffee and brewing equipment.</p>
+
+            <div class="cart-empty-actions">
+              <a href="coffee.html" class="primary-button">
+                <i class="fa-solid fa-mug-hot"></i>
+                Browse Coffee
+              </a>
+
+              <a href="equipment.html" class="secondary-button">
+                <i class="fa-solid fa-kitchen-set"></i>
+                View Equipment
+              </a>
+            </div>
+          </div>
+
+          <!-- Cart Layout -->
+          <div class="cart-layout">
+            <!-- Cart Items -->
+            <div class="cart-main">
+              <div class="cart-heading">
+                <div>
+                  <p class="section-kicker">YOUR ITEMS</p>
+
+                  <h2>Selected for you</h2>
+                </div>
+
+                <a href="coffee.html" class="text-link">
+                  Continue shopping
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+
+              <!--
+                            cart.js will insert products here
+                        -->
+              <div id="cart-items"></div>
+            </div>
+
+            <!-- =========================
+                         SUMMARY
+                    ========================== -->
+            <aside id="cart-summary" class="cart-summary">
+              <div class="summary-top">
+                <p class="section-kicker">ORDER SUMMARY</p>
+
+                <h2>Your order</h2>
+              </div>
+
+              <div class="summary-row">
+                <span> Subtotal </span>
+
+                <strong id="cart-subtotal"> $0.00 </strong>
+              </div>
+
+              <div class="summary-row">
+                <span> Delivery </span>
+
+                <span class="summary-note"> Calculated at checkout </span>
+              </div>
+
+              <div class="summary-divider"></div>
+
+              <div class="summary-row summary-total">
+                <span> Total </span>
+
+                <strong id="cart-total"> $0.00 </strong>
+              </div>
+
+              <button
+                type="button"
+                class="checkout-button"
+                id="checkout-button"
+              >
+                <span> Proceed to Checkout </span>
+
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+
+              <p class="checkout-note">
+                <i class="fa-solid fa-lock"></i>
+                Secure checkout experience
+              </p>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+             SHOPPING CTA
+        ========================== -->
+      <section class="cart-cta">
+        <div class="section-content cart-cta-inner">
+          <div>
+            <p class="section-kicker">KEEP EXPLORING</p>
+
+            <h2>Something else caught your eye?</h2>
+          </div>
+
+          <div class="cart-cta-buttons">
+            <a href="coffee.html" class="primary-button">
+              Shop Coffee
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <a href="equipment.html" class="outline-button">
+              Brewing Equipment
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <div class="checkout-modal" id="checkout-modal" aria-hidden="true">
+      <div class="checkout-modal-card" role="dialog" aria-modal="true" aria-labelledby="checkout-title">
+        <div class="checkout-success-icon"><i class="fa-solid fa-check"></i></div>
+        <h2 id="checkout-title">Order Confirmed!</h2>
+        <p>Thank you for your purchase.<br>Your order has been successfully placed.</p>
+        <button type="button" id="checkout-ok" class="checkout-ok">OK</button>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="section-content footer-grid">
+        <div class="footer-brand">
+          <a class="brand footer-brand-link" href="./index.html">
+            <span class="brand-mark" aria-hidden="true"
+              ><i class="fa-solid fa-seedling"></i
+            ></span>
+            <span>
+              <strong>Bean Boutique</strong>
+              <small>COFFEE HOUSE</small>
+            </span>
+          </a>
+          <p>Thoughtful coffee, useful tools and a place to slow down.</p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Explore</h3>
+          <a href="./coffee.html">Coffee</a>
+          <a href="./equipment.html">Equipment</a>
+          <a href="./events.html">Events</a>
+          <a href="./offers.html">Offers</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>Visit</h3>
+          <p>32 Merchant Street<br>Yangon, Myanmar</p>
+          <p>Mon–Fri: 8 AM – 8 PM<br>Sat–Sun: 9 AM – 9 PM</p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Follow along</h3>
+          <p>See new drinks, beans and workshop moments.</p>
+<div class="social-icons">            <a
+              class="social-link"
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
+              <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+            </a>
+            <a
+              class="social-link"
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a
+              class="social-link"
+              href="https://www.youtube.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube"
+            >
+              <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom section-content">
+        <p>
+          &copy; 2026 Bean Boutique Coffee House. Designed for a welcoming
+          coffee experience.
+        </p>
+      </div>
+    </footer>
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <!-- Common JS -->
+    <script src="./JS/script.js" defer></script>
+
+    <!-- Cart JS -->
+    <script src="./JS/cart.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="Explore Bean Boutique's coffee selection with simple descriptions and easy online ordering." name="description">
+<title>Coffee Collection | Bean Boutique</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet">
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+<!-- Website CSS -->
+<link href="./CSS/style.css" rel="stylesheet">
+</head>
+<body>
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+<nav aria-label="Primary navigation" class="nav-bar section-content">
+<a aria-label="Bean and Bloom home" class="brand" href="./index.html">
+<span aria-hidden="true" class="brand-mark">
+<i class="fa-solid fa-seedling"></i>
+</span>
+<span>
+<strong>Bean Boutique</strong>
+<small>COFFEE HOUSE</small>
+</span>
+</a>
+<button aria-controls="primary-menu" aria-expanded="false" aria-label="Open navigation menu" class="menu-button" id="menu-open-button" type="button">
+<i aria-hidden="true" class="fa-solid fa-bars"></i>
+</button>
+<div class="nav-menu" id="primary-menu">
+<button aria-label="Close navigation menu" class="menu-button menu-close" id="menu-close-button" type="button">
+<i aria-hidden="true" class="fa-solid fa-xmark"></i>
+</button>
+<a class="nav-link" href="./index.html">Home</a>
+<a class="nav-link" href="./coffee.html">Coffee</a>
+<a class="nav-link" href="./equipment.html">Equipment</a>
+<a class="nav-link" href="./events.html">Events</a>
+<a class="nav-link" href="./offers.html">Offers</a>
+<a class="nav-link cart-link" href="./cart.html">
+            Cart
+<span class="cart-count" id="cart-count" role="status" aria-live="polite">0</span>
+</a>
+</div>
+</nav>
+</header>
+<!-- ================= MAIN ================= -->
+<main>
+<!-- ================= COFFEE INTRO ================= -->
+<section class="coffee-intro">
+<div class="coffee-intro-content">
+<div>
+<p class="eyebrow">Bean Boutique / COFFEE COLLECTION</p>
+<h1>
+              Find your
+              <em>daily favorite.</em>
+</h1>
+<p class="intro-text">
+              From smooth everyday blends to bold espresso, explore coffee
+              selected for different moods, flavours and brewing styles.
+            </p>
+</div>
+<div class="coffee-intro-badge">
+<i class="fa-solid fa-seedling"></i>
+<strong>12</strong>
+<span> carefully selected coffee blends </span>
+</div>
+</div>
+</section>
+<!-- ================= SEARCH / FILTER ================= -->
+<section class="coffee-tools">
+<div class="coffee-tools-heading">
+<div>
+<p class="small-label">EXPLORE THE COLLECTION</p>
+<h2>
+              Find your
+              <span>favourite blend.</span>
+</h2>
+</div>
+<p>
+            Search by blend, roast or brew method.
+          </p>
+</div>
+<form class="coffee-search" id="coffee-search-form">
+<label class="sr-only" for="search-input"> Search coffee </label>
+<input autocomplete="off" id="search-input" placeholder="Search coffee..." type="search">
+<button aria-label="Search coffee" id="search-btn" type="submit">
+<i class="fa-solid fa-magnifying-glass"></i>
+</button>
+</form>
+</section>
+<!-- ================= COFFEE COLLECTION ================= -->
+<section aria-labelledby="collection-title" class="coffee-collection">
+<div class="collection-heading">
+<div>
+<p class="small-label">OUR SELECTION</p>
+<h2 id="collection-title">Coffee for every cup.</h2>
+</div>
+<p class="collection-description">
+            Explore the blends and find your next cup.
+          </p>
+</div>
+<!-- Product Grid -->
+<div class="coffee-grid" id="coffee-grid">
+<!-- ================= VANILLA NUT BLEND ================= -->
+<article class="coffee-card" data-name="Vanilla Nut Blend" data-price="23.49">
+<div class="coffee-image-wrap">
+<img alt="Vanilla Nut Blend coffee drink" loading="lazy" src="./Images/coffee-cups/vanilla-nut-blend.jpg">
+
+</div>
+<div class="coffee-card-content">
+<h3>Vanilla Nut Blend</h3><p class="coffee-description">Smooth coffee with sweet vanilla and a gentle nutty finish.</p>
+
+
+<div class="coffee-bottom">
+<span class="price"> $23.49 </span>
+<button aria-label="Add Vanilla Nut Blend to cart" class="add-to-cart" type="button">
+                  Add to cart
+                  <i class="fa-solid fa-arrow-right"></i>
+</button>
+</div>
+</div>
+</article>
+<!-- ================= MOCHA ROAST ================= -->
+<article class="coffee-card" data-name="Mocha Roast" data-price="23.99">
+<div class="coffee-image-wrap">
+<img alt="Mocha Roast coffee drink" loading="lazy" src="./Images/coffee-cups/mocha-roast.jpg">
+
+</div>
+<div class="coffee-card-content">
+<h3>Mocha Roast</h3><p class="coffee-description">Rich and bold with deep cocoa and dark chocolate notes.</p>
+
+
+<div class="coffee-bottom">
+<span class="price"> $23.99 </span>
+<button aria-label="Add Mocha Roast to cart" class="add-to-cart" type="button">
+                  Add to cart
+                  <i class="fa-solid fa-arrow-right"></i>
+</button>
+</div>
+</div>
+</article>
+<!-- ================= CARAMEL CREAM BLEND ================= -->
+<article class="coffee-card" data-name="Caramel Cream Blend" data-price="22.99">
+<div class="coffee-image-wrap">
+<img alt="Caramel Cream Blend coffee drink" loading="lazy" src="./Images/coffee-cups/caramel-cream-blend.jpg">
+
+</div>
+<div class="coffee-card-content">
+<h3>Caramel Cream Blend</h3><p class="coffee-description">A smooth, creamy blend with a warm caramel sweetness.</p>
+
+
+<div class="coffee-bottom">
+<span class="price"> $22.99 </span>
+<button aria-label="Add Caramel Cream Blend to cart" class="add-to-cart" type="button">
+                  Add to cart
+                  <i class="fa-solid fa-arrow-right"></i>
+</button>
+</div>
+</div>
+</article>
+<!-- ================= FRENCH ROAST ================= -->
+<article class="coffee-card" data-name="French Roast" data-price="24.49">
+<div class="coffee-image-wrap">
+<img alt="French Roast coffee drink" loading="lazy" src="./Images/coffee-cups/french-roast.jpg">
+
+</div>
+<div class="coffee-card-content">
+<h3>French Roast</h3><p class="coffee-description">Dark and full-bodied with a deep smoky coffee flavour.</p>
+
+
+<div class="coffee-bottom">
+<span class="price"> $24.49 </span>
+<button aria-label="Add French Roast to cart" class="add-to-cart" type="button">
+                  Add to cart
+                  <i class="fa-solid fa-arrow-right"></i>
+</button>
+</div>
+</div>
+</article>
+<!-- ================= ETHIOPIAN SUNRISE ================= -->
+<article class="coffee-card" data-name="Ethiopian Sunrise" data-price="25.99">
+<div class="coffee-image-wrap">
+<img alt="Ethiopian Sunrise coffee drink" loading="lazy" src="./Images/coffee-cups/ethiopian-sunrise.jpg">
+
+</div>
+<div class="coffee-card-content">
+<h3>Ethiopian Sunrise</h3><p class="coffee-description">Bright and fresh with light berry and floral flavours.</p>
+
+
+<div class="coffee-bottom">
+<span class="price"> $25.99 </span>
+<button aria-label="Add Ethiopian Sunrise to cart" class="add-to-cart" type="button">
+                  Add to cart
+                  <i class="fa-solid fa-arrow-right"></i>
+</button>
+</div>
+</div>
+</article>
+<!-- ================= HAZELNUT CREAM ================= -->
+<article class="coffee-card" data-name="Hazelnut Cream" data-price="22.49">
+<div class="coffee-image-wrap">
+<img alt="Hazelnut Cream coffee drink" loading="lazy" src="./Images/coffee-cups/hazelnut-cream.jpg">
+
+</div>
+<div class="coffee-card-content">
+<h3>Hazelnut Cream</h3><p class="coffee-description">Smooth coffee with a sweet hazelnut and cocoa finish.</p>
+
+
+<div class="coffee-bottom">
+<span class="price"> $22.49 </span>
+<button aria-label="Add Hazelnut Cream to cart" class="add-to-cart" type="button">
+                  Add to cart
+                  <i class="fa-solid fa-arrow-right"></i>
+</button>
+</div>
+</div>
+</article>
+<!-- ================= DECAF HOUSE BLEND ================= -->
+<article class="coffee-card" data-name="Decaf House Blend" data-price="22.49">
+<div class="coffee-image-wrap">
+<img alt="Decaf House Blend coffee drink" loading="lazy" src="./Images/coffee-cups/decaf-house-blend.jpg">
+
+</div>
+<div class="coffee-card-content">
+<h3>Decaf House Blend</h3><p class="coffee-description">A mellow, balanced coffee with soft chocolate and caramel notes.</p>
+
+
+<div class="coffee-bottom">
+<span class="price"> $22.49 </span>
+<button aria-label="Add Decaf House Blend to cart" class="add-to-cart" type="button">
+                  Add to cart
+                  <i class="fa-solid fa-arrow-right"></i>
+</button>
+</div>
+</div>
+</article>
+<!-- ================= MIDNIGHT ROAST ================= -->
+<article class="coffee-card" data-name="Midnight Roast" data-price="24.99">
+<div class="coffee-image-wrap">
+<img alt="Midnight Roast coffee drink" loading="lazy" src="./Images/coffee-cups/midnight-roast.jpg">
+
+</div>
+<div class="coffee-card-content">
+<h3>Midnight Roast</h3><p class="coffee-description">Bold dark roast with rich cocoa and a smooth finish.</p>
+
+
+<div class="coffee-bottom">
+<span class="price"> $24.99 </span>
+<button aria-label="Add Midnight Roast to cart" class="add-to-cart" type="button">
+                  Add to cart
+                  <i class="fa-solid fa-arrow-right"></i>
+</button>
+</div>
+</div>
+</article>
+<!-- ================= MAPLE MORNING BLEND ================= -->
+<article class="coffee-card" data-name="Maple Morning Blend" data-price="23.49">
+<div class="coffee-image-wrap">
+<img alt="Maple Morning Blend coffee drink" loading="lazy" src="./Images/coffee-cups/maple-morning-blend.jpg">
+
+</div>
+<div class="coffee-card-content">
+<h3>Maple Morning Blend</h3><p class="coffee-description">A smooth morning blend with sweet maple and toffee notes.</p>
+
+
+<div class="coffee-bottom">
+<span class="price"> $23.49 </span>
+<button aria-label="Add Maple Morning Blend to cart" class="add-to-cart" type="button">
+                  Add to cart
+                  <i class="fa-solid fa-arrow-right"></i>
+</button>
+</div>
+</div>
+</article>
+<!-- ================= COLD BREW BLEND ================= -->
+<article class="coffee-card" data-name="Cold Brew Blend" data-price="23.99">
+<div class="coffee-image-wrap">
+<img alt="Cold Brew Blend coffee drink" loading="lazy" src="./Images/coffee-cups/cold-brew-blend.jpg">
+
+</div>
+<div class="coffee-card-content">
+<h3>Cold Brew Blend</h3><p class="coffee-description">Smooth and refreshing with gentle cocoa and caramel flavours.</p>
+
+
+<div class="coffee-bottom">
+<span class="price"> $23.99 </span>
+<button aria-label="Add Cold Brew Blend to cart" class="add-to-cart" type="button">
+                  Add to cart
+                  <i class="fa-solid fa-arrow-right"></i>
+</button>
+</div>
+</div>
+</article>
+<!-- ================= NITRO BLEND ================= -->
+<article class="coffee-card" data-name="Nitro Blend" data-price="24.49">
+<div class="coffee-image-wrap">
+<img alt="Nitro Blend coffee drink" loading="lazy" src="./Images/coffee-cups/nitro-blend.jpg">
+
+</div>
+<div class="coffee-card-content">
+<h3>Nitro Blend</h3><p class="coffee-description">Rich and smooth with chocolate and roasted nut flavours.</p>
+
+
+<div class="coffee-bottom">
+<span class="price"> $24.49 </span>
+<button aria-label="Add Nitro Blend to cart" class="add-to-cart" type="button">
+                  Add to cart
+                  <i class="fa-solid fa-arrow-right"></i>
+</button>
+</div>
+</div>
+</article>
+<!-- ================= SEASONAL BLEND ================= -->
+<article class="coffee-card" data-name="Seasonal Blend" data-price="23.99">
+<div class="coffee-image-wrap">
+<img alt="Seasonal Blend coffee drink" loading="lazy" src="./Images/coffee-cups/seasonal-blend.jpg">
+
+</div>
+<div class="coffee-card-content">
+<h3>Seasonal Blend</h3><p class="coffee-description">A comforting seasonal coffee with warm cinnamon and brown sugar notes.</p>
+
+
+<div class="coffee-bottom">
+<span class="price"> $23.99 </span>
+<button aria-label="Add Seasonal Blend to cart" class="add-to-cart" type="button">
+                  Add to cart
+                  <i class="fa-solid fa-arrow-right"></i>
+</button>
+</div>
+</div>
+</article>
+</div>
+<!-- No Search Results -->
+<div class="no-results" id="no-results">
+<i class="fa-solid fa-mug-hot"></i>
+<h3>No coffee found</h3>
+<p>Try searching for another blend.</p>
+</div>
+</section>
+<!-- ================= BREWING MESSAGE ================= -->
+<section class="coffee-bottom-banner">
+<div class="banner-icon">
+<i class="fa-solid fa-mug-hot"></i>
+</div>
+<div class="banner-content">
+<p class="small-label">NOT SURE WHERE TO START?</p>
+<h2>Your perfect coffee is one brew away.</h2>
+<p>
+            Explore our brewing equipment and find the right method for your
+            favourite beans.
+          </p>
+</div>
+<a class="banner-link" href="equipment.html">
+          Explore equipment
+          <i class="fa-solid fa-arrow-right"></i>
+</a>
+</section>
+<section aria-labelledby="coffee-learning-title" class="coffee-widgets">
+<div class="section-content">
+<div class="section-heading-row">
+<div>
+<p class="section-kicker">COFFEE LEARNING</p>
+<h2 class="section-heading" id="coffee-learning-title">
+                Brew better at home.
+              </h2>
+</div>
+<p class="section-side-text">
+              Explore the shop location and a practical French Press brewing
+              guide.
+            </p>
+</div>
+<div class="coffee-widgets-grid">
+<div class="widget-card">
+<div class="widget-card-heading">
+<i aria-hidden="true" class="fa-solid fa-location-dot"></i>
+<div>
+<p class="small-label">LOCATION WIDGET</p>
+<h3>Find Bean Boutique</h3>
+</div>
+</div>
+<iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Merchant+Street,+Yangon&amp;output=embed" title="Bean Boutique location map"></iframe>
+</div>
+<div class="widget-card">
+<div class="widget-card-heading">
+<i aria-hidden="true" class="fa-brands fa-youtube"></i>
+<div>
+<p class="small-label">VIDEO WIDGET</p>
+<h3>French Press technique</h3>
+</div>
+</div>
+<div class="video-frame">
+<iframe allow="
+                    accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                    web-share;
+                  " allowfullscreen="" loading="lazy" src="https://www.youtube.com/embed/st571DYYTR8" title="The Ultimate French Press Technique"></iframe>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+<div class="section-content footer-grid">
+<div class="footer-brand">
+<a class="brand footer-brand-link" href="./index.html">
+<span aria-hidden="true" class="brand-mark"><i class="fa-solid fa-seedling"></i></span>
+<span>
+<strong>Bean Boutique</strong>
+<small>COFFEE HOUSE</small>
+</span>
+</a>
+<p>Thoughtful coffee, useful tools and a place to slow down.</p>
+</div>
+<div class="footer-column">
+<h3>Explore</h3>
+<a href="./coffee.html">Coffee</a>
+<a href="./equipment.html">Equipment</a>
+<a href="./events.html">Events</a>
+<a href="./offers.html">Offers</a>
+</div>
+<div class="footer-column">
+<h3>Visit</h3>
+<p>32 Merchant Street<br>Yangon, Myanmar</p>
+<p>Mon–Fri: 8 AM – 8 PM<br>Sat–Sun: 9 AM – 9 PM</p>
+</div>
+<div class="footer-column">
+<h3>Follow along</h3>
+<p>See new drinks, beans and workshop moments.</p>
+<div class="social-icons" role="group" aria-label="Social media links">
+<a aria-label="Facebook" class="social-link" href="https://www.facebook.com/" rel="noopener noreferrer" target="_blank">
+<i aria-hidden="true" class="fa-brands fa-facebook-f"></i>
+</a>
+<a aria-label="Instagram" class="social-link" href="https://www.instagram.com/" rel="noopener noreferrer" target="_blank">
+<i aria-hidden="true" class="fa-brands fa-instagram"></i>
+</a>
+<a aria-label="YouTube" class="social-link" href="https://www.youtube.com/" rel="noopener noreferrer" target="_blank">
+<i aria-hidden="true" class="fa-brands fa-youtube"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="footer-bottom section-content">
+<p>
+          © 2026 Bean Boutique Coffee House. Designed for a welcoming
+          coffee experience.
+        </p>
+</div>
+</footer>
+<!-- Website JavaScript -->
+<script defer="" src="./JS/script.js"></script>
+<!-- Coffee Page JavaScript -->
+<script defer="" src="./JS/coffee.js"></script>
+</body>
+</html>
